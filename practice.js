@@ -64,17 +64,18 @@ var groceries = ['apples', 'milk', 'eggs', 'bread']
 //and goodBoy (a boolean).
 
 //Code Here
-let dog = {
+var dog = {
   name: '',
   color: '',
-  age: '',
+  age: '' ,
   goodBoy: true
 }
+
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
 //Code Here
-let name = 'devMountainClassPet'
+dog.name = 'devMountainClassPet'
 
 //////////////////PROBLEM 10////////////////////
 
@@ -86,15 +87,15 @@ let name = 'devMountainClassPet'
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 // Code here
-function nameCheck (name1) {
-  if (nameCheck === 'Steven') {
+function nameCheck(name) {
+  if (nameCheck == 'Steven') {
     return 'What is up Steven?'
   }
-  else if (nameCheck === 'Bryan') {
-    return 'Hey Bryan'
+  else if (nameCheck == 'Bryan') {
+    return 'Hey Bryan!'
   }
   else {
-    return 'Cool name, ${name}'
+    return 'Cool name' == '${name}'
   }
 }
 
@@ -164,10 +165,10 @@ let globalScope = ["duck"];
 let bathroomScope = ["duck", "rubberDuck",];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["sailorDuck","realDuck"];
+let bathtubScope = ["sailorDuck","rubberDuck", "duck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["realDuck"];
+let pondScope = ["realDuck", "duck"];
 
 //////////////////PROBLEM 14////////////////////
 
